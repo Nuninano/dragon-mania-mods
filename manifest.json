@@ -1,0 +1,10 @@
+{
+  "mods": [
+    {
+      "id": "ejemplo-evento",
+      "version": "1",
+      "url": "https://raw.githubusercontent.com/tuusuario/dragon-mania-mods/main/mods/ejemplo-evento.zip",
+      "sha256": "61c45beef2c53232eb14722b9e0aafeac13f9ee9c19cfc838f0459b11106492d"
+    }
+  ]
+}
