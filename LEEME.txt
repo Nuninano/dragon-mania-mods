@@ -1,0 +1,2 @@
+Todo lo que pongas en assets/ reemplaza el archivo del juego con la misma ruta.
+Este mod viene desactivado ("enabled": false). Borra esta carpeta o ponlo en true cuando tengas contenido real.
