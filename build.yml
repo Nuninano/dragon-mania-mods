@@ -1,0 +1,20 @@
+name: Build mods
+on:
+  push:
+    branches: [main]
+    paths: ["src/**", "tools/**"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tools/build.py
+      - name: Commit resultado
+        run: |
+          git config user.name "mods-bot"
+          git config user.email "mods-bot@users.noreply.github.com"
+          git add manifest.json mods
+          git diff --cached --quiet || (git commit -m "Actualizar mods y manifest" && git push)
