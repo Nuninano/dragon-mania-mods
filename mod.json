@@ -1,0 +1,8 @@
+{
+  "id": "ejemplo-evento",
+  "name": "Ejemplo de evento",
+  "version": "1",
+  "priority": 0,
+  "enabled": false,
+  "dependencies": []
+}
